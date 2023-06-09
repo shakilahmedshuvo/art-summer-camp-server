@@ -6,6 +6,7 @@ const port = process.env.PORT || 5000;
 // json files for toys
 const instructorJSON = require('./instructor.json');
 const reviewsJSON = require('./review.json');
+const classesJSON = require('./PopularClasses.json');
 
 // use middle ware
 app.use(cors());
@@ -23,6 +24,11 @@ app.get('/instructors', (req, res) => {
 // reviewsJSON file section
 app.get('/reviews', (req, res) => {
     res.send(reviewsJSON)
+});
+
+// classesJSON file section
+app.get('/classes', (req, res) => {
+    res.send(classesJSON)
 });
 
 app.listen(port, () => {
