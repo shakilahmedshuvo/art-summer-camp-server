@@ -32,7 +32,6 @@ async function run() {
         // make the db collection
         const usersCollection = client.db("artSummerCampDb").collection("users");
 
-        // users api
         // user post api
         app.post('/users', async (req, res) => {
             const user = req.body;
@@ -42,6 +41,12 @@ async function run() {
                 return res.send({ message: 'user already exists' })
             }
             const result = await usersCollection.insertOne(user);
+            res.send(result);
+        });
+
+        //  user get api
+        app.get('/users', async (req, res) => {
+            const result = await usersCollection.find().toArray();
             res.send(result);
         });
 
