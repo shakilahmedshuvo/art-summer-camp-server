@@ -5,6 +5,7 @@
 * React TanStack Query
 * Axios JS
 * Json Web Token( JWT )
+* Framer-motion
 * React Icons
 * Sweet Alert
 * Swiper JS
