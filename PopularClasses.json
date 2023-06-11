@@ -4,7 +4,7 @@
         "name": "Creative Canvas",
         "studentNumber": "864",
         "instructor": "Shakil Ahmed",
-        "price": "100",
+        "price": 100,
         "img": "https://img.freepik.com/premium-vector/artist-concept-professional-illustrator-front-big-easel-screen-holding-brush-paints-idea-creative-people-profession-art-gallery-profession-flat-vector-illustration_613284-2963.jpg?w=826",
         "info": "Unleash your imagination and explore various painting techniques to create stunning works of art on canvas."
     },
@@ -13,7 +13,7 @@
         "name": "Masterpiece Makers",
         "studentNumber": "850",
         "instructor": "Likhon Adnan",
-        "price": "90",
+        "price": 90,
         "img": "https://img.freepik.com/free-vector/artist-concept-professional-illustrator-front-big-easel-screen-holding-brush-paints-idea-creative-people-profession-art-gallery-profession-flat-vector-illustration_613284-2962.jpg?w=826&t=st=1686334388~exp=1686334988~hmac=d09e8079c372256a696f164b6c4227ff38d7b632093519c5dc57770c226d2698",
         "info": "Discover the secrets of renowned artists as you learn to paint, sculpt, and create your own masterpieces."
     },
@@ -22,7 +22,7 @@
         "name": "Artventure Academy",
         "studentNumber": "845",
         "instructor": "Ahmed Shuvo",
-        "price": "80",
+        "price": 80,
         "img": "https://img.freepik.com/free-vector/smiling-woman-standing-near-easel-painting-flat-illustration_74855-11057.jpg?w=826&t=st=1686334821~exp=1686335421~hmac=d61dddba1bd1760f9acf85275bfaa3d9391fb6c352a996463770e082ee6daaef",
         "info": "Embark on an artistic adventure through mixed media, collage, and printmaking to ignite your creativity."
     },
@@ -31,7 +31,7 @@
         "name": "Expressive Brushstrok",
         "studentNumber": "444",
         "instructor": "Abdullah Al Imran",
-        "price": "70",
+        "price": 70,
         "img": "https://img.freepik.com/free-vector/artist-work-flat-design_52683-19609.jpg?w=826&t=st=1686334392~exp=1686334992~hmac=9bd301a656c27b24139e84c19cb6db3846dcb28ec62e047cce1455d1c812601b",
         "info": " Dive into the world of expressive painting with bold brushstrokes, vibrant colors, and abstract techniques."
     },
@@ -40,7 +40,7 @@
         "name": "Imagination Station",
         "studentNumber": "439",
         "instructor": "Ahmed Choudhury",
-        "price": "70",
+        "price": 70,
         "img": "https://img.freepik.com/premium-vector/male-artist-painting-canvas-studio-concept-illustration_338371-115.jpg?w=826",
         "info": "Let your imagination run wild in this class where you'll experiment with different mediums and unleash your creativity."
     },
@@ -49,7 +49,7 @@
         "name": "Colorful Creations",
         "studentNumber": "426",
         "instructor": "Al Rafa",
-        "price": "60",
+        "price": 60,
         "img": "https://img.freepik.com/free-vector/stay-home-concept_52683-35471.jpg?w=826&t=st=1686334990~exp=1686335590~hmac=817fc35f8424c977f3aade4a4ad7d703a5026f68851e4a16d5ce97d51d135da2",
         "info": "Explore the power of color as you experiment with various techniques in painting, drawing, and mixed media to create vibrant artworks."
     }
