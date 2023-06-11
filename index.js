@@ -139,7 +139,7 @@ async function run() {
             res.send(result);
         });
 
-        // cart delete api
+        // Select The Class  delete api
         app.delete('/carts/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: new ObjectId(id) }
