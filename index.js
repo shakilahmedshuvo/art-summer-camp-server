@@ -54,6 +54,7 @@ async function run() {
 
         // make the db collection
         const usersCollection = client.db("artSummerCampDb").collection("users");
+        const classCollection = client.db("artSummerCampDb").collection("classes");
 
         // jwt
         app.post('/jwt', (req, res) => {
@@ -118,6 +119,13 @@ async function run() {
             const result = { admin: user?.role === 'admin' };
             res.send(result);
         });
+
+        // Select The Class post api
+        app.post('/selectClass', async (req, res) => {
+            const classes = req.body;
+            const result = await classCollection.insertOne(classes);
+            res.send(result);
+        })
 
         // Send a ping to confirm a successful connection
         await client.db("admin").command({ ping: 1 });
