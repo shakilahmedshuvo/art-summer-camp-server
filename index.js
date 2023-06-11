@@ -13,6 +13,7 @@ const classesJSON = require('./PopularClasses.json');
 app.use(cors());
 app.use(express.json())
 
+// verifyJWT function
 const verifyJWT = (req, res, next) => {
     const authorization = req.headers.authorization;
     if (!authorization) {
@@ -32,7 +33,7 @@ const verifyJWT = (req, res, next) => {
         req.decoded = decoded;
         next();
     })
-}
+};
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.frhesy5.mongodb.net/?retryWrites=true&w=majority`;
@@ -59,7 +60,7 @@ async function run() {
             const user = req.body;
             const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1h' })
             res.send({ token });
-        })
+        });
 
         // verify admin api
         const verifyAdmin = async (req, res, next) => {
@@ -70,7 +71,7 @@ async function run() {
                 return res.status(403).send({ error: true, message: 'Forbidden Access' });
             }
             next();
-        }
+        };
 
         // user post api
         app.post('/users', async (req, res) => {
@@ -116,7 +117,7 @@ async function run() {
             const user = await usersCollection.findOne(query);
             const result = { admin: user?.role === 'admin' };
             res.send(result);
-        })
+        });
 
         // Send a ping to confirm a successful connection
         await client.db("admin").command({ ping: 1 });
