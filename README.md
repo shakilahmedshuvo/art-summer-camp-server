@@ -12,4 +12,7 @@
 * Express JS
 * Mongodb
 * Dot Env
+
+* Assignment- 12
+* Privet Repo: https://github.com/programming-hero-web-course1/b7a12-summer-camp-server_side-shakilahmedshuvo
 * Live Website Link: https://art-summer-camp.web.app/
