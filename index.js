@@ -178,4 +178,4 @@ app.get('/classes', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Art Summer Camp is running on port: ${port}`);
-})
+});
